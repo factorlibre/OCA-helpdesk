@@ -15,6 +15,7 @@
                 'Odoo Community Association (OCA)',
     'website': 'https://github.com/OCA/helpdesk',
     'depends': [
+        'sale',
         'mail',
         'portal',
     ],
@@ -22,6 +23,7 @@
         'data/helpdesk_data.xml',
         'security/helpdesk_security.xml',
         'security/ir.model.access.csv',
+        'views/res_config_view.xml',
         'views/res_partner_view.xml',
         'views/helpdesk_ticket_templates.xml',
         'views/helpdesk_ticket_menu.xml',

@@ -1,7 +1,7 @@
 * `Domatix <https://www.domatix.com>`_:
 
   * Carlos Martínez
-  * Catalin Airimitoaie 
+  * Catalin Airimitoaie
 
 * `Adaptive City <https://www.adaptivecity.com>`_:
 
@@ -19,3 +19,5 @@
 * `Factor Libre <https://factorlibre.com>`_:
 
   * María Alhambra
+  * Daniel Cano
+  * Adrián Cruz
