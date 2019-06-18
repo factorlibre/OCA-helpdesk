@@ -228,17 +228,10 @@
       </field>
     </record>
 
-    <record model="ir.actions.act_window" id="helpdesk_ticket_action">
-      <field name="name">Helpdesk ticket</field>
-      <field name="res_model">helpdesk.ticket</field>
-      <field name="view_mode">tree,form,kanban,calendar,pivot</field>
-      <field name="view_id" ref="helpdesk.ticket_view_tree"/>
-    </record>
-
   <!-- Helpdesk Blacklist -->
 
   <record model="ir.ui.view" id="helpdesk_form_view_blacklist">
-    <field name="name">Helpdesk Blacklist Form</field>
+    <field name="name">Helpdesk Blacklist</field>
     <field name="model">helpdesk.ticket.blacklist.line</field>
     <field name="arch" type="xml">
         <form string="Helpdesk Blacklist Form">
@@ -251,7 +244,7 @@
   </record>
 
   <record model="ir.ui.view" id="helpdesk_tree_view_blacklist">
-    <field name="name">Helpdesk Blacklist Tree</field>
+    <field name="name">Helpdesk Blacklist</field>
     <field name="model">helpdesk.ticket.blacklist.line</field>
     <field name="arch" type="xml">
         <tree string="Helpdesk Blacklist Tree">
@@ -281,7 +274,7 @@
       <field name="name">Helpdesk WhiteList Form</field>
       <field name="model">helpdesk.ticket.whitelist.line</field>
       <field name="arch" type="xml">
-          <form string="Helpdesk Whitelist Form">
+          <form string="Helpdesk Whitelist">
               <group colspan="4" col="4">
                   <field name="email"/>
                   <field name="comment"/>
@@ -291,7 +284,7 @@
   </record>
 
   <record model="ir.ui.view" id="helpdesk_tree_view_whitelist">
-      <field name="name">Helpdesk Whitelist Tree</field>
+      <field name="name">Helpdesk Whitelist</field>
       <field name="model">helpdesk.ticket.whitelist.line</field>
       <field name="arch" type="xml">
           <tree string="Helpdesk Whitelist Tree">
