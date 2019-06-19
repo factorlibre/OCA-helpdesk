@@ -15,9 +15,9 @@
                        <div class="content-group">
                          <div class="mt8">
                            <label string="Create BlackList item when " class="oe_inline o_light_label"/>
-                           <field name="crm_helpdesk_improvement_number_of_tickets" class="oe_inline"/>
+                           <field name="helpdesk_improvement_number_of_tickets" class="oe_inline"/>
                            <label string="  tickets are created over a period of " class="oe_inline o_light_label"/>
-                           <field name="crm_helpdesk_improvement_number_of_minutes" class="oe_inline"/>
+                           <field name="helpdesk_improvement_number_of_minutes" class="oe_inline"/>
                            <label string="  minutes." class="oe_inline o_light_label"/>
                           </div>
                         </div>
