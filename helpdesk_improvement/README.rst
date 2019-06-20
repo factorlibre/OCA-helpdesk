@@ -1,5 +1,5 @@
 ========
-Helpdesk
+Helpdesk Improvement
 ========
 
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -78,7 +78,6 @@ Contributors
   * María Alhambra
   * Daniel Cano
   * Adrián Cruz
-
 Maintainers
 ~~~~~~~~~~~
 

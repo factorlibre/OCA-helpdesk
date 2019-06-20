@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <!-- Helpdesk Blacklist -->
+
+  <record model="ir.ui.view" id="helpdesk_form_view_blacklist">
+    <field name="name">Blacklist</field>
+    <field name="model">helpdesk.ticket.blacklist.line</field>
+    <field name="arch" type="xml">
+        <form string="Blacklist Form">
+            <group colspan="4" col="4">
+                <field name="email"/>
+                <field name="comment"/>
+            </group>
+        </form>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="helpdesk_tree_view_blacklist">
+    <field name="name">Blacklist</field>
+    <field name="model">helpdesk.ticket.blacklist.line</field>
+    <field name="arch" type="xml">
+        <tree string="Blacklist Tree">
+            <field name="email"/>
+            <field name="comment"/>
+        </tree>
+    </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="case_helpdesk_blacklist">
+      <field name="name">BlackList</field>
+      <field name="res_model">helpdesk.ticket.blacklist.line</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="helpdesk_tree_view_blacklist"/>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to create a blacklist item.
+        </p><p>
+          Helpdesk allow to have an email list in order to disable sending automatic messages.
+        </p>
+      </field>
+  </record>
+
+  <menuitem name="BlackList" id="menu_help_blacklist"
+      groups="helpdesk.group_helpdesk_manager"
+      parent="helpdesk.helpdesk_ticket_main_menu" action="case_helpdesk_blacklist" sequence="15"/>
+
+  <!-- Helpdesk Whitelist -->
+  <record model="ir.ui.view" id="crm_helpdesk_form_view_whitelist">
+      <field name="name">WhiteList</field>
+      <field name="model">helpdesk.ticket.whitelist.line</field>
+      <field name="arch" type="xml">
+          <form string="Helpdesk Whitelist">
+              <group colspan="4" col="4">
+                  <field name="email"/>
+                  <field name="comment"/>
+              </group>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="helpdesk_tree_view_whitelist">
+      <field name="name">Whitelist</field>
+      <field name="model">helpdesk.ticket.whitelist.line</field>
+      <field name="arch" type="xml">
+          <tree string="Helpdesk Whitelist Tree">
+              <field name="email"/>
+              <field name="comment"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="case_helpdesk_whitelist">
+      <field name="name">WhiteList</field>
+      <field name="res_model">helpdesk.ticket.whitelist.line</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="helpdesk_tree_view_whitelist"/>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to create a whitelist item.
+        </p><p>
+          Helpdesk allow to skip for this list the blacklist limitation.
+        </p>
+      </field>
+  </record>
+
+  <menuitem name="WhiteList" id="menu_help_whitelist"
+    groups="helpdesk.group_helpdesk_manager"
+    parent="helpdesk.helpdesk_ticket_main_menu" action="case_helpdesk_whitelist" sequence="20"/>
+</odoo>
