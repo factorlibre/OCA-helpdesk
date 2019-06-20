@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_improvement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-20 08:54+0000\n"
+"PO-Revision-Date: 2019-06-20 11:06+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: helpdesk_improvement
+#: model:ir.actions.act_window,name:helpdesk_improvement.case_helpdesk_blacklist
+#: model:ir.ui.menu,name:helpdesk_improvement.menu_help_blacklist
+msgid "BlackList"
+msgstr "BlackList"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.res_config_settings_view_form_inherit_helpdesk
+msgid "BlackList Configuration:"
+msgstr "Configuración de la BlackList:"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.helpdesk_form_view_blacklist
+msgid "Blacklist Form"
+msgstr "Blacklist Form"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.helpdesk_tree_view_blacklist
+msgid "Blacklist Tree"
+msgstr "Blacklist Tree"
+
+#. module: helpdesk_improvement
+#: model:ir.actions.act_window,help:helpdesk_improvement.case_helpdesk_blacklist
+msgid "Click to create a blacklist item."
+msgstr "Pulsa el botón para crear un elemento en la BlackList."
+
+#. module: helpdesk_improvement
+#: model:ir.actions.act_window,help:helpdesk_improvement.case_helpdesk_whitelist
+msgid "Click to create a whitelist item."
+msgstr "Pulsa el botón para crear un elemento en la WhiteList."
+
+#. module: helpdesk_improvement
+#: model:ir.actions.act_window,name:helpdesk_improvement.helpdesk_ticket_config_settings_action
+msgid "Configure Helpdesk"
+msgstr "Configuración de Helpdesk"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.res_config_settings_view_form_inherit_helpdesk
+msgid "Create BlackList item when"
+msgstr "Crea un elemento en la BlackList cuando "
+
+#. module: helpdesk_improvement
+#: model:ir.model,name:helpdesk_improvement.model_helpdesk_ticket_blacklist_line
+msgid "Emails detected as machines"
+msgstr "Mails detectados como máquinas"
+
+#. module: helpdesk_improvement
+#: model:ir.model,name:helpdesk_improvement.model_helpdesk_ticket_whitelist_line
+msgid "Emails excluded from blacklist"
+msgstr "Mails excluidos para la creación automática de elementos para la BlackList"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.res_config_settings_view_form_inherit_helpdesk
+msgid "Helpdesk"
+msgstr "Helpdesk"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.res_config_settings_view_form_inherit_helpdesk
+msgid "Helpdesk BlackList"
+msgstr "Helpdesk BlackList"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.crm_helpdesk_form_view_whitelist
+msgid "Helpdesk Whitelist"
+msgstr "Helpdesk Whitelist"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.helpdesk_tree_view_whitelist
+msgid "Helpdesk Whitelist Tree"
+msgstr "Helpdesk Whitelist Tree"
+
+#. module: helpdesk_improvement
+#: model:ir.actions.act_window,help:helpdesk_improvement.case_helpdesk_blacklist
+msgid "Helpdesk allow to have an email list in order to disable sending automatic messages."
+msgstr "El sistema de helpdesk permite tener una lista de direcciones de correo electronico con el fin de que se deshabilite para los tickets creados por ellos el envío de mails automáticos."
+
+#. module: helpdesk_improvement
+#: model:ir.actions.act_window,help:helpdesk_improvement.case_helpdesk_whitelist
+msgid "Helpdesk allow to skip for this list the blacklist limitation."
+msgstr "El sistema de helpdesk permite establecer excepciones para evitar que el sistema cree elementos automaticamente en la BlackList."
+
+#. module: helpdesk_improvement
+#: model:ir.model.fields,field_description:helpdesk_improvement.field_connector_config_settings_helpdesk_improvement_number_of_minutes
+#: model:ir.model.fields,field_description:helpdesk_improvement.field_res_config_settings_helpdesk_improvement_number_of_minutes
+msgid "Number of minutes."
+msgstr "Número de minutos."
+
+#. module: helpdesk_improvement
+#: model:ir.model.fields,field_description:helpdesk_improvement.field_connector_config_settings_helpdesk_improvement_number_of_tickets
+#: model:ir.model.fields,field_description:helpdesk_improvement.field_res_config_settings_helpdesk_improvement_number_of_tickets
+msgid "Number of tickets."
+msgstr "Número de tickets creados."
+
+#. module: helpdesk_improvement
+#: model:ir.ui.menu,name:helpdesk_improvement.helpdesk_ticket_config_settings_menu
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: helpdesk_improvement
+#: code:addons/helpdesk_improvement/models/helpdesk_improvement.py:10
+#: code:addons/helpdesk_improvement/models/helpdesk_improvement.py:25
+#: code:addons/naturitas/OCA/h_fl/OCA-helpdesk/helpdesk_improvement/models/helpdesk_improvement.py:10
+#: code:addons/naturitas/OCA/h_fl/OCA-helpdesk/helpdesk_improvement/models/helpdesk_improvement.py:25
+#: sql_constraint:helpdesk.ticket.blacklist.line:0
+#: sql_constraint:helpdesk.ticket.whitelist.line:0
+#, python-format
+msgid "The email must be unique!"
+msgstr "El email debe ser único!"
+
+#. module: helpdesk_improvement
+#: model:ir.actions.act_window,name:helpdesk_improvement.case_helpdesk_whitelist
+#: model:ir.ui.menu,name:helpdesk_improvement.menu_help_whitelist
+msgid "WhiteList"
+msgstr "WhiteList"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.res_config_settings_view_form_inherit_helpdesk
+msgid "minutes."
+msgstr " minutos."
+
+#. module: helpdesk_improvement
+#: model:ir.model,name:helpdesk_improvement.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+
+#. module: helpdesk_improvement
+#: model:ir.ui.view,arch_db:helpdesk_improvement.res_config_settings_view_form_inherit_helpdesk
+msgid "tickets are created over a period of"
+msgstr " tickets sean creados en un periodo de tiempo de"
