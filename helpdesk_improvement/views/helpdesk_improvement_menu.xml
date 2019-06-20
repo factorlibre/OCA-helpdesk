@@ -11,6 +11,7 @@
     </record>
 
     <menuitem id="helpdesk_ticket_config_settings_menu" name="Settings"
+      groups="helpdesk.group_helpdesk_manager"
       parent="helpdesk.helpdesk_ticket_config_main_menu" action="helpdesk_ticket_config_settings_action"
       sequence="1"/>
 
