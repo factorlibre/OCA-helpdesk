@@ -21,6 +21,7 @@
     ],
     'data': [
         'views/res_config_view.xml',
+        'security/ir.model.access.csv',
         'views/helpdesk_improvement_menu.xml',
         'views/helpdesk_improvement_view.xml'
     ],
