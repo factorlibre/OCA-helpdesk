@@ -13,7 +13,7 @@ class HelpdeskTicket(models.Model):
         return self.env['helpdesk.ticket.stage'].search([], limit=1).id
 
     number = fields.Char(string='Ticket number', default="/",
-                         readonly=True)
+                         readonly=True, copy=False)
     name = fields.Char(string='Title', required=True)
     description = fields.Text(required=True)
     user_id = fields.Many2one(
@@ -119,6 +119,18 @@ class HelpdeskTicket(models.Model):
         # Check if mail to the user has to be sent
         if vals.get('user_id') and res:
             res.send_user_mail()
+        return res
+
+    @api.multi
+    def copy(self, default=None):
+        self.ensure_one()
+        if default is None:
+            default = {}
+        if "number" not in default:
+            default['number'] = self.env['ir.sequence'].next_by_code(
+                'helpdesk.ticket.sequence'
+            ) or '/'
+        res = super(HelpdeskTicket, self).copy(default)
         return res
 
     @api.multi
